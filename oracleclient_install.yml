@@ -1,0 +1,8 @@
+- hosts: ora-x1
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  become_user: root
+  
+  roles:
+   - oracleclient19c_install
